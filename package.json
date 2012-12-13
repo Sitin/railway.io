@@ -23,7 +23,7 @@
     },
     "devDependencies": {
         "grunt-coffee":      "*",
-        "grunt-coffeelint ": "*",
+        "grunt-coffeelint": "*",
         "socket.io":         "*"
     },
     "author":          "Mikhail Zyatin",
