@@ -29,15 +29,15 @@ exports.init = ->
       # and leave the function.
       accept 'No cookie transmitted.', false
 
-  req.on = fn
-  req.removeListener = ->
-    delete req.on
+    req.on = fn
+    req.removeListener = ->
+      delete req.on
 
-  cookieParser req, null, (err) ->
-    if (err)
-      accept 'Error in cookie parser', false
-    session req, on: fn, end: fn, (err) ->
-      accept null, true
+    cookieParser req, null, (err) ->
+      if (err)
+        accept 'Error in cookie parser', false
+      session req, on: fn, end: fn, (err) ->
+        accept null, true
 
   io.sockets.on 'connection', (socket) ->
     console.log socket.handshake.sessionID
@@ -48,13 +48,13 @@ exports.init = ->
     socket.on 'disconnect', ->
       console.log 'A socket with sessionID %s disconnected!', hs.sessionID
 
-  socket.join hs.sessionID
+    socket.join hs.sessionID
 
-  bridge = new railway.ControllerBridge app.root
-  map.forEach (r) ->
-    socket.on r.event, (data) ->
-      ctl = bridge.loadController r.controller
-      ctl.perform r.action,
-        session: hs.session
-        sessionID: hs.sessionID
-        params: data, {}, fn
+    bridge = new railway.ControllerBridge app.root
+    map.forEach (r) ->
+      socket.on r.event, (data) ->
+        ctl = bridge.loadController r.controller
+        ctl.perform r.action,
+          session: hs.session
+          sessionID: hs.sessionID
+          params: data, {}, fn
