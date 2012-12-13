@@ -1,6 +1,6 @@
 {
   "name": "rw.io",
-  "version": "0.0.1_1",
+  "version": "0.0.2",
   "description": "railwayjs+socketio",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,14 @@
     "kontroller"
   ],
   "author": "Anatoliy Chakkaev",
+  "contributors": [
+      {
+          "name": "Anatoliy Chakkaev"
+      },
+      {
+          "name": "Mikhail Zyatin",
+          "email": "mikhail.zyatin@gmail.com"
+      }
+  ],
   "license": "MIT"
 }
