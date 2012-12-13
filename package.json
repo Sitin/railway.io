@@ -22,7 +22,6 @@
     "dependencies":    {
     },
     "devDependencies": {
-        "grunt":             "~0.3.17",
         "grunt-coffee":      "*",
         "grunt-coffeelint ": "*",
         "socket.io":         "*"
