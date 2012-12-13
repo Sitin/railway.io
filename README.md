@@ -1,6 +1,7 @@
 ## About
 
-Socket.IO bindings for railwayjs
+Binds Socket.IO to Railway.JS actions.
+This project is currently a fork of the Anatoliy Chackaev's 1602/rw.io.
 
 ## Installataion
 

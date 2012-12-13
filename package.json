@@ -1,17 +1,30 @@
 {
-  "name": "railway.io",
-  "version": "0.0.1",
-  "description": "Socket.io integration into Railway.JS",
-  "main": "index.js",
-  "scripts": {
-    "test": "grunt test"
-  },
-  "repository": "",
-  "keywords": [
-    "socket.io",
-    "railwayjs",
-    "websockets"
-  ],
-  "author": "Mikhail Zyatin",
-  "license": "MIT"
+    "name":            "railway.io",
+    "version":         "0.0.1",
+    "description":     "Socket.io integration into Railway.JS",
+    "main":            "index.js",
+    "scripts":         {
+        "test": "grunt test"
+    },
+    "repository":      "",
+    "keywords":        [
+        "socket.io",
+        "railwayjs",
+        "websockets"
+    ],
+    "licenses":        [
+        {
+            "type": "MIT",
+            "url":  "http://mths.be/mit"
+        }
+    ],
+    "dependencies":    {
+    },
+    "devDependencies": {
+        "grunt":             "~0.3.17",
+        "grunt-coffee":      "*",
+        "grunt-coffeelint ": "*"
+    },
+    "author":          "Mikhail Zyatin",
+    "license":         "MIT"
 }
